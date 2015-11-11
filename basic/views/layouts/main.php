@@ -20,6 +20,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link href="/project/basic/web/assets/22943244/css/mystyle.css" rel="stylesheet">
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -37,6 +38,8 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Date Picker', 'url' => ['/date/index']],
+            ['label' => 'Countries', 'url' => ['/country/index']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ?
